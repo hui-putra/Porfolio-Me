@@ -10,6 +10,7 @@ body {
     font-style: normal;
     background-color: #0f0f0f;
     color: white;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -54,6 +55,7 @@ body {
     background-color: #0f0f0f;
     padding: 0 5%;
 }
+
 .hero{
     display: flex;
     min-height: calc(100vh - 80px);
@@ -70,7 +72,7 @@ body {
     padding: 4rem;
     position: relative;
 }
-.hero-h1{
+.hero-text h1{
     font-weight: 800;
     margin-bottom: 2rem;
     text-transform: none;
@@ -78,17 +80,16 @@ body {
     line-height: 0.9;
 }
 
-.hero-textp{
-    font-size: 0.95rem;
+.hero-text p{
     margin-bottom: 3rem;
-    color: #999;
-    min-width: 450px;
     line-height: 1.5;
-
+    max-width: 450px;
+    font-size: 1.0rem;
+    color: #999;
 }
 
-.garis{
-    width: 150px;
+.line{
+    width: 100px;
     height: 1px;
     background-color: #E67514;
     display: inline-block;
@@ -98,10 +99,6 @@ body {
 
 .hero-text span{
     display: block;
-}
-
-.hero-fokus:hover{
-    color: #E67514;
 }
 
 .btn-primary{
@@ -129,39 +126,10 @@ body {
     position: relative;
 }
 
-.hero-text p{
-    margin-bottom: 3rem;
-    line-height: 1.5;
-    max-width: 450px;
-    font-size: 1.0rem;
-    color: #999;
-}
-
-.btn-explore{
-    background-color: #E67514;
-    color: white;
-    padding: 1rem 2.5rem;
-    font-size: 0.9rem;
-    transition: all 0.3s ease;
-    border-radius: 16px;
-    border: none;
-    cursor: pointer;
-    font-weight: 600;
-}
-
-.btn-explore:hover{
-    background-color: #eee1d6;
-    color: black;
-    transform: scale(1.05);
-    fill: black;
-}
-
-.icon{
+.icon svg{
     width: 20px;
     height: 20px;
-    display: flex;
-    align-items: left;
-    justify-content: center;
+    fill: currentColor;
 }
 
 
@@ -170,7 +138,7 @@ body {
                 min-width: 100%;
             }
             .hero-content {
-                height: 50vh;
+                height: 100vh, 50vh;
             }
             .hero-image {
                 padding: 3rem 2rem;
