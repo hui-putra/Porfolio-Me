@@ -1,10 +1,10 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+body{
     font-family: "Lato", sans-serif;
     font-weight: 200;
     font-style: normal;
@@ -13,7 +13,7 @@ body {
     overflow-x: hidden;
 }
 
-.navbar {
+.navbar{
     color: white;
     display: flex; 
     justify-content: space-between; 
@@ -25,33 +25,33 @@ body {
     z-index: 99;
 }
 
-.logo {
+.logo{
     font-size: 29px;
     font-weight: bold;
     color: white;
 }
 
-.nav-links {
+.nav-links{
     list-style: none;
     display: flex; 
 }
 
-.nav-links li {
+.nav-links li{
     margin-left: 20px;
 }
 
-.nav-links a {
+.nav-links a{
     text-decoration: none; 
-    color: white~;
+    color: white;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.nav-links a:hover {
+.nav-links a:hover{
     color: #E67514;
     transform: scale(1.05);
 }
-.hero-section {
+.hero-section{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,19 +66,19 @@ body {
     flex-wrap: wrap;
 }
 
-.hero-content {
+.hero-content{
     flex: 1;
     min-width: 50%;
     background-color: #151515;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 4rem;
+    padding: 2rem;
     position: relative;
 }
 .hero-text h1{
     font-weight: 800;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     text-transform: none;
     font-size: clamp(3rem, 8vw, 6rem);
     line-height: 0.9;
@@ -108,7 +108,7 @@ body {
 .btn-primary{
     background-color: #E67514;
     color: white;
-    padding: 1rem 2.5rem;
+    padding: 1rem 1vh;
     font-size: 0.9rem;
     transition: all 0.3s ease;
     border-radius: 16px;
@@ -125,7 +125,6 @@ body {
 
 .hero-image{
     flex: 1;
-    background-color: #222;
     min-width: 50%;
     position: relative;
 }
@@ -137,15 +136,15 @@ body {
 }
 
 
-@media (max-width: 768px) {
-            .hero-content, .hero-image {
-                min-width: 100%;
-            }
-            .hero-content {
-                height: 100vh, 50vh;
-            }
-            .hero-image {
-                padding: 3rem 2rem;
-            }
-        }
-
+@media (max-width: 768px){
+    .hero-content, .hero-image {
+        min-width: 100%;
+        width: 100%;
+    }
+    .hero-content {
+        min-height: 100vh 50vh;
+    }
+    .hero-image {
+        padding: 3rem 2rem;
+    }
+}
