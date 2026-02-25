@@ -19,6 +19,7 @@ body {
     justify-content: space-between; 
     align-items: center; 
     padding: 15px 40px; 
+    postion: fixed;
 }
 
 .logo {
@@ -38,7 +39,7 @@ body {
 
 .nav-links a {
     text-decoration: none; 
-    color: #ababab;
+    color: #ababab;~`
     cursor: pointer;
     transition: all 0.3s ease;
 }
