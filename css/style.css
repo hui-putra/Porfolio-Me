@@ -136,13 +136,17 @@ body{
 }
 
 
-@media (max-width: 768px){
+@media (max-width: 767px) {
     .hero-content, .hero-image {
         min-width: 100%;
-        width: 100%;
     }
+
+    .nav-links{
+        display: none;
+    }
+
     .hero-content {
-        min-height: 100vh 50vh;
+        height: 100vh, 50vh;
     }
     .hero-image {
         padding: 3rem 2rem;
