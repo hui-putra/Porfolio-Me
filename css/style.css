@@ -18,8 +18,11 @@ body {
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
-    padding: 15px 40px; 
-    postion: fixed;
+    padding: 15px 40px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 99;
 }
 
 .logo {
@@ -39,7 +42,7 @@ body {
 
 .nav-links a {
     text-decoration: none; 
-    color: #ababab;~`
+    color: white~;
     cursor: pointer;
     transition: all 0.3s ease;
 }
