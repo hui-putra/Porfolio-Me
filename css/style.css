@@ -137,15 +137,20 @@ body {
 }
 
 
-@media (max-width: 768px) {
-            .hero-content, .hero-image {
-                min-width: 100%;
-            }
-            .hero-content {
-                height: 100vh, 50vh;
-            }
-            .hero-image {
-                padding: 3rem 2rem;
-            }
-        }
+@media (max-width: 767px) {
+    .hero-content, .hero-image {
+        min-width: 100%;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .hero-content {
+        height: 100vh, 50vh;
+    }
+    .hero-image {
+        padding: 3rem 2rem;
+    }
+}
 
