@@ -4,38 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+
+    <!-- cdn tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- style css -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylenavbar.css">
+    <link rel="stylesheet" href="css/stylehamburger.css">
+    <link rel="stylesheet" href="css/stylebutton.css">
+    <link rel="stylesheet" href="css/stylecontent.css">
+">
+
+    <!-- merubah icon -->
+    <link rel="icon" href="assets/img/logo.png">
+
+    <!-- font google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <!-- navbar -->
     <header class="navbar">
         <div class="logo">R</div>
-        <ul class="nav-links ">
-            <li><a href="#">Beranda</a></li>
+        <ul class="nav-links">
+            <li><a href="" class="active-menu">Beranda</a></li>
+            <li><a href="Skill.html">Skills</a></li>
+            <li><a href="form.html">Kontak</a></li>
+        </ul>
+        <div id="mylinks">
+        <ul class="navbar-menu">
+            <li><a href="" class="active-menu">Beranda</a></li>
             <li><a href="Skill.html">Skills</a></li>
             <li><a href="form.html">Kontak</a></li>
         </ul> 
+        </div>
+        <a href="javascript:void(0);" class="icon-menu" onclick="myFunction()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                <path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/>
+            </svg>
+        </a>
     </header>
+    <!-- end navbar -->
 
+    <!-- body -->
     <main class="hero">
         <section class="hero-image">
             <img src="assets/img/img1.jpg" alt="Portrait" class="size-full object-cover grayscale brightness-75">
         </section>
             <section class="hero-content">
                 <div class="hero-text">
-                    <h1 class="flex items-center sm:items-start flex-col">Rama <span class="flex items-center"></span>Acyuta </div><div class="line w-full sm:w-40"></div></h1>
+                    <h1 class="flex items-center sm:items-start flex-col tracking-in-expand">Rama <span class="flex items-center"></span>Acyuta <div class="line w-full sm:w-40"></div></h1>
                 </div>
                 <div class="hero-text">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque inventore maxime alias, vero dolorum quia dolore quisquam reiciendis nihil beatae. Sequi enim esse voluptas veniam reiciendis nobis quia iste unde!</p>
                 </div>
                 <div class="flex items-center md:justify-between lg:justify-start gap-5 lg:gap-8 flex-col lg:flex-row">
-                    <button class="btn-primary justify-center lg:justify-start w-full lg:w-fit whitespace-nowrap lg:p-5 flex items-center gap-2">Download CV
+                    <button class="btn-primary justify-center lg:justify-start w-full lg:w-fit whitespace-nowrap lg:p-5 flex items-center gap-2 heartbeat">Download CV
                         <div class="icon">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                                 <path d="M192 64C156.7 64 128 92.7 128 128L128 512C128 547.3 156.7 576 192 576L448 576C483.3 576 512 547.3 512 512L512 234.5C512 217.5 505.3 201.2 493.3 189.2L386.7 82.7C374.7 70.7 358.5 64 341.5 64L192 64zM453.5 240L360 240C346.7 240 336 229.3 336 216L336 122.5L453.5 240z"/>
@@ -53,5 +81,9 @@
                 </div>
             </section>
     </main>
+    <!-- end body -->
+
+    <!-- my js -->
+    <script src="js/hambuger.js"></script>
 </body>
 </html>
