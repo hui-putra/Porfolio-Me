@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adeline Palmerston | Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+        body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        /* Header Style */
+        .header-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 60px;
+        }
+
+        .nav-links a {
+            margin-left: 30px;
+            font-size: 14px;
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ff8c00;
+        }
+
+        /* Form Design */
+        .title-section h1 {
+            font-size: 64px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .title-section h1::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background-color: #555;
+        }
+
+        .input-label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 8px;
+            color: #aaaaaa;
+            text-transform: capitalize;
+        }
+
+        .custom-input {
+            width: 100%;
+            padding: 12px 20px;
+            background-color: #ffffff;
+            color: #000000;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .custom-textarea {
+            width: 100%;
+            padding: 20px;
+            background-color: #ffffff;
+            color: #000000;
+            border: none;
+            border-radius: 12px;
+            font-size: 24px;
+            min-height: 80px;
+            text-align: center;
+            outline: none;
+        }
+
+        /* Buttons */
+        .btn-orange {
+            background-color: #ff6600;
+            color: white;
+            padding: 12px 40px;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: transform 0.2s, background 0.3s;
+        }
+
+        .btn-orange:hover {
+            background-color: #e65c00;
+            transform: scale(1.05);
+        }
+
+        /* Modal Popup */
+        #custom-popup {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.85);
+            z-index: 100;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup-box {
+            background: #2a2a2a;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            max-width: 400px;
+            border: 1px solid #444;
+        }
+
+        /* Grayscale Image */
+        .side-image {
+            filter: grayscale(100%);
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 4px;
+        }
+
+        footer {
+            padding: 40px 60px;
+            display: flex;
+            justify-content: space-between;
+            color: #666;
+            font-size: 12px;
+            border-top: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header-nav">
+        <div class="font-bold text-lg">Adeline Palmerston</div>
+        <nav class="flex items-center">
+            <div class="nav-links hidden md:block">
+                <a href="#">Home</a>
+                <a href="#">Photo</a>
+                <a href="#">About Me</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="ml-8 cursor-pointer">
+                <svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="30" height="3" fill="white"/>
+                    <rect y="12" width="30" height="3" fill="white"/>
+                </svg>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="grid grid-cols-1 lg:grid-cols-2 gap-16 px-10 md:px-20 py-10">
+        
+        <!-- Form Section -->
+        <div>
+            <div class="title-section mb-10">
+                <h1>My Contact</h1>
+                <p class="text-gray-400 mt-6 leading-relaxed max-w-md">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+
+            <form id="contactForm" class="space-y-6">
+                <!-- Row 1: First Name & Last Name -->
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="form-group">
+                        <label class="input-label">First Name</label>
+                        <input type="text" id="firstName" class="custom-input" placeholder="fist name" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="input-label">Last Name</label>
+                        <input type="text" id="lastName" class="custom-input" placeholder="last name" required>
+                    </div>
+                </div>
+
+                <!-- Row 2: Phone & Subject -->
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="form-group">
+                        <label class="input-label">Phone Number</label>
+                        <input type="text" id="phone" class="custom-input" placeholder="nomber hp" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="input-label">Subject</label>
+                        <input type="text" id="subject" class="custom-input" placeholder="subject" required>
+                    </div>
+                </div>
+
+                <!-- Row 3: Message -->
+                <div class="form-group">
+                    <label class="input-label">Pesan</label>
+                    <textarea id="message" class="custom-textarea" placeholder="Pesan" required></textarea>
+                </div>
+
+                <!-- Buttons -->
+                <div class="flex gap-4 pt-4">
+                    <button type="submit" class="btn-orange">submit</button>
+                    <button type="reset" class="btn-orange">reset</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Image Section -->
+        <div class="hidden lg:block">
+            <img src="https://images.unsplash.com/photo-1518144591331-17a5dd71c477?auto=format&fit=crop&q=80&w=1000" alt="Corridor" class="side-image shadow-2xl">
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div>Adeline Palmerston Portfolio</div>
+        <div>Page | 09</div>
+    </footer>
+
+    <!-- Simple Popup Modal -->
+    <div id="custom-popup">
+        <div class="popup-box">
+            <div id="popup-icon" class="text-5xl mb-4"></div>
+            <h2 id="popup-title" class="text-2xl font-bold mb-2"></h2>
+            <p id="popup-desc" class="text-gray-400 mb-6"></p>
+            <button onclick="closePopup()" class="bg-white text-black px-6 py-2 rounded-full font-bold">Tutup</button>
+        </div>
+    </div>
+
+    <script>
+        const contactForm = document.getElementById('contactForm');
+        const popup = document.getElementById('custom-popup');
+
+        // Logic Submit
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Ambil data dari input
+            const data = {
+                firstName: document.getElementById('firstName').value,
+                lastName: document.getElementById('lastName').value,
+                phone: document.getElementById('phone').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value,
+                timestamp: new Date().toLocaleString()
+            };
+
+            // Validasi Sederhana
+            if(data.firstName.trim() === "" || data.message.trim() === "") {
+                showPopup("Error", "Mohon isi formulir dengan benar!", "❌");
+                return;
+            }
+
+            // Simulasi Berhasil (Simpan ke Console)
+            console.log("Data Berhasil Disimpan:", data);
+            showPopup("Berhasil!", "Pesan Anda telah kami terima. Terima kasih!", "✅");
+            
+            // Reset Form setelah submit
+            contactForm.reset();
+        });
+
+        // Logic Reset
+        contactForm.addEventListener('reset', function() {
+            console.log("Form telah dikosongkan.");
+            // Opsi: Tampilkan popup kecil jika diinginkan
+        });
+
+        function showPopup(title, desc, icon) {
+            document.getElementById('popup-title').innerText = title;
+            document.getElementById('popup-desc').innerText = desc;
+            document.getElementById('popup-icon').innerText = icon;
+            popup.style.display = 'flex';
+        }
+
+        function closePopup() {
+            popup.style.display = 'none';
+        }
+
+        // Tutup popup jika klik di luar area box
+        window.onclick = function(event) {
+            if (event.target == popup) {
+                closePopup();
+            }
+        }
+    </script>
+</body>
+</html>

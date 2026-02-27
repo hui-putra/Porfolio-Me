@@ -1,26 +1,4 @@
-#mylinks{
-    display: none;
-}
-
-.icon-menu{
-    display: none;
-    width: 2.0rem;
-    cursor: pointer;
-    fill: currentColor;
-}
-
-.navbar-menu{
-    list-style: none;
-    display: none;
-}
-
-@media (max-width: 768px) {
-    .nav-links{
-        display: none;
-    }
-    .navbar{
-        background: #0f0f0f;
-    }
+@media (max-width: 768px){
     #mylinks{
         display: none; 
         position: absolute;

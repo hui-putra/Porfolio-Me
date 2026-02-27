@@ -1,43 +1,15 @@
-.navbar{
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 25px 40px;
-    width: 100%;
-    position: fixed;
-    top: 0px;
-    z-index: 99;
+#mylinks{
+    display: none;
 }
 
-.logo{
-    font-size: 29px;
-    font-weight: bold;
-    color: white;
+.icon-menu{
+    display: none;
+    width: 2.0rem;
+    cursor: pointer;
+    fill: currentColor;
 }
 
-.nav-links{
+.navbar-menu{
     list-style: none;
-    display: flex; 
-}
-
-.nav-links li{
-    margin-left: 20px;
-}
-
-.nav-links a{
-    text-decoration: none; 
-    color: white;
-    transition: all 0.3s ease;
-}
-
-.nav-links a:hover{
-    color: #E67514;
-    transform: scale(1.05);
-}
-
-.active-menu{
-    color: #434343;
-    font-weight: bold;
-    custor: default;
-    pointer-events: none;
+    display: none;
 }
